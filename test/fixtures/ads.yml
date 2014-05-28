@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  price: 1.5
+  location: MyString
+  description: MyText
+  image_file_name: plane.jpeg
+
+two:
+  title: MyString
+  price: 1.5
+  location: MyString
+  description: MyText
+  image_file_name: plane.jpeg
