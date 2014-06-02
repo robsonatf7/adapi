@@ -4,7 +4,10 @@ class AdsController < ApplicationController
   # GET /ads
   # GET /ads.json
   def index
-    @ads = Ad.all
+    category_name = params[:category_name]
+    category = Category.find_by(name: category_name)
+    category_id = category.id
+    @ads = Ad.where(category_id: category_id)
     @categories = Category.all
     respond_to do |format|
       format.json
