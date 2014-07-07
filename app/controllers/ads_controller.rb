@@ -6,14 +6,23 @@ class AdsController < ApplicationController
   # GET /ads
   # GET /ads.json
   def index
-    category_name = params[:category_name]
-    category = Category.find_by(name: category_name)
-    category_id = category.id
-    @ads = Ad.where(category_id: category_id)
-    @categories = Category.all
-    respond_to do |format|
-      format.json
-      format.html
+    if params[:category_name]
+      category_name = params[:category_name]
+      category = Category.find_by(name: category_name)
+      category_id = category.id
+      @ads = Ad.where(category_id: category_id)
+      @categories = Category.all
+      respond_to do |format|
+        format.json
+        format.html
+      end
+    elsif params[:user_email]
+      user_email = params[:user_email]
+      @ads = Ad.where(user_email: user_email)
+      respond_to do |format|
+        format.json
+        format.html
+      end
     end
   end
 
