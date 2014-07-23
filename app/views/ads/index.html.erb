@@ -19,7 +19,7 @@
         <td><%= ad.price %></td>
         <td><%= ad.location %></td>
         <td><%= ad.description %></td>
-
+        <td><%= ad.user_email %></td>
         <% @categories.each do |category| %>
           <% if category.id == ad.category_id %>
             <td><%= category.name %></td>
