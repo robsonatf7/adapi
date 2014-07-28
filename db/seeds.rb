@@ -6,9 +6,17 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Category.create( name: "Celulares")
-Category.create( name: "Carros")
+Category.create( name: "Tablets")
+Category.create( name: "Eletrônicos")
+Category.create( name: "Video-games")
+Category.create( name: "Informática")
+Category.create( name: "Esportes")
+Category.create( name: "Arte e Lazer")
+Category.create( name: "Veículos")
 Category.create( name: "Para Casa")
 Category.create( name: "Moda e Beleza")
+Category.create( name: "Bebê e Criança")
+Category.create( name: "Outros")
 
 Ad.create( title: "iphone", price: 8, location: "Sao Paulo", 
 		  description: "nonononononononononononononononononononono",
