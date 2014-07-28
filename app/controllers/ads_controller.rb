@@ -23,7 +23,16 @@ class AdsController < ApplicationController
         format.json
         format.html
       end
+    elsif params[:search]
+      search = params[:search]
+      @ads = Ad.where("title LIKE ?", "%#{search}%")
+      respond_to do |format|
+        format.json
+        format.html
+      end
     end
+      
+
   end
 
   # GET /ads/1
