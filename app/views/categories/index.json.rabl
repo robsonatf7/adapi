@@ -1,2 +1,2 @@
 collection @categories
-attribute :id, :name, :total
+attribute :id, :name, :total, :image

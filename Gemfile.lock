@@ -1,3 +1,13 @@
+GIT
+  remote: git://github.com/thoughtbot/paperclip.git
+  revision: dca87ec5d8038b2d436a75ad6119c8eb67b73e70
+  specs:
+    paperclip (4.2.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -60,11 +70,6 @@ GEM
     mime-types (1.25.1)
     minitest (5.3.3)
     multi_json (1.10.0)
-    paperclip (4.1.1)
-      activemodel (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      cocaine (~> 0.5.3)
-      mime-types
     polyglot (0.3.4)
     rabl (0.9.3)
       activesupport (>= 2.3.14)
@@ -135,7 +140,7 @@ DEPENDENCIES
   haml
   jbuilder (~> 2.0)
   jquery-rails
-  paperclip
+  paperclip!
   rabl
   rails (= 4.1.0)
   sass-rails (~> 4.0.3)

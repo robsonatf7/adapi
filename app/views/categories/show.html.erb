@@ -5,5 +5,10 @@
   <%= @category.name %>
 </p>
 
+<p>
+	<%= image_tag @category.image.url %><br/>
+	<%= link_to @category.image.url, @category.image.url %>
+</p>
+
 <%= link_to 'Edit', edit_category_path(@category) %> |
 <%= link_to 'Back', categories_path %>
