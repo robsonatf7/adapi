@@ -5,40 +5,24 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-Category.create( name: "Celulares")
-Category.create( name: "Tablets")
-Category.create( name: "Eletrônicos")
-Category.create( name: "Video-games")
-Category.create( name: "Informática")
-Category.create( name: "Esportes")
-Category.create( name: "Arte e Lazer")
-Category.create( name: "Veículos")
-Category.create( name: "Para Casa")
-Category.create( name: "Moda e Beleza")
-Category.create( name: "Bebê e Criança")
-Category.create( name: "Outros")
+Category.create( name: "Celulares", image: File.new("#{Rails.root}/app/assets/images/icon_phone.png"))
+Category.create( name: "Tablets", image: File.new("#{Rails.root}/app/assets/images/icon_tablet.png"))
+Category.create( name: "Eletrônicos", image: File.new("#{Rails.root}/app/assets/images/icon_tv.png"))
+Category.create( name: "Video-games", image: File.new("#{Rails.root}/app/assets/images/icon_joystick.png"))
+Category.create( name: "Informática", image: File.new("#{Rails.root}/app/assets/images/icon_pc.png"))
+Category.create( name: "Esportes", image: File.new("#{Rails.root}/app/assets/images/icon_bike.png"))
+Category.create( name: "Arte e Lazer", image: File.new("#{Rails.root}/app/assets/images/icon_guitar.png"))
+Category.create( name: "Veículos", image: File.new("#{Rails.root}/app/assets/images/icon_car.png"))
+Category.create( name: "Para Casa", image: File.new("#{Rails.root}/app/assets/images/icon_house.png"))
+Category.create( name: "Moda e Beleza", image: File.new("#{Rails.root}/app/assets/images/icon_shirt.png"))
+Category.create( name: "Bebê e Criança", image: File.new("#{Rails.root}/app/assets/images/icon_baby.png"))
+Category.create( name: "Outros", image: File.new("#{Rails.root}/app/assets/images/icon_other.png"))
 
-Ad.create( title: "iphone", price: 8, location: "Sao Paulo", 
-		  description: "nonononononononononononononononononononono",
-		  category_id: 1, user_email: "robsonsky@yahooo.com.br")
-Ad.create( title: "iphone", price: 8, location: "Sao Paulo", 
-		  description: "nonononononononononononononononononononono",
-		  category_id: 1, user_email: "robsonsky@yahooo.com.br")
-Ad.create( title: "iphone", price: 8, location: "Sao Paulo", 
-		  description: "nonononononononononononononononononononono",
-		  category_id: 2, user_email: "robsonsky@yahooo.com.br")
-Ad.create( title: "iphone", price: 8, location: "Sao Paulo", 
-		  description: "nonononononononononononononononononononono",
-		  category_id: 2, user_email: "robsonsky@yahooo.com.br")
-Ad.create( title: "iphone", price: 8, location: "Sao Paulo", 
-		  description: "nonononononononononononononononononononono",
-		  category_id: 3, user_email: "robsonsky@yahooo.com.br")
-Ad.create( title: "iphone", price: 8, location: "Sao Paulo", 
-		  description: "nonononononononononononononononononononono",
-		  category_id: 3, user_email: "robsonsky@yahooo.com.br")
-Ad.create( title: "iphone", price: 8, location: "Sao Paulo", 
-		  description: "nonononononononononononononononononononono",
-		  category_id: 4, user_email: "robsonsky@yahooo.com.br")
-Ad.create( title: "iphone", price: 8, location: "Sao Paulo", 
-		  description: "nonononononononononononononononononononono",
-		  category_id: 4, user_email: "robsonsky@yahooo.com.br")
+12.times do
+	for i in (1..12) do
+		Ad.create( title: "Brand new iPhone 5", price: 8, location: "Sao Paulo", 
+		  	   	   description: "nonononononononononononononononononononono",
+		  	       category_id: i, user_email: "robsonsky@yahooo.com.br",
+		  	       image: File.new("#{Rails.root}/app/assets/images/iphone.jpg"))
+	end
+end

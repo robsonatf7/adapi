@@ -30,6 +30,8 @@ class AdsController < ApplicationController
         format.json
         format.html
       end
+    else
+      @ads = Ad.all.limit(8).reverse
     end
       
 
