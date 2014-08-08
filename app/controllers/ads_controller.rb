@@ -31,7 +31,7 @@ class AdsController < ApplicationController
         format.html
       end
     else
-      @ads = Ad.all.limit(8).reverse
+      @ads = Ad.all.limit(9).reverse
     end
       
 
