@@ -22,7 +22,7 @@ Category.create( name: "Outros", image: File.new("#{Rails.root}/app/assets/image
 	for i in (1..12) do
 		Ad.create( title: "Brand new iPhone 5", price: 8, location: "Sao Paulo", 
 		  	   	   description: "nonononononononononononononononononononono",
-		  	       category_id: i, user_email: "robsonsky@yahooo.com.br",
+		  	       category_id: i, user_email: "robsonsky@yahoo.com.br",
 		  	       image: File.new("#{Rails.root}/app/assets/images/iphone.jpg"))
 	end
 end
