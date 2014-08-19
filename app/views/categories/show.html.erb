@@ -7,6 +7,7 @@
 
 <p>
 	<%= image_tag @category.image.url %><br/>
+	<%= image_tag @category.image.url(:thumb) %><br/>
 	<%= link_to @category.image.url, @category.image.url %>
 </p>
 

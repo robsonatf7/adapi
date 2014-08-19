@@ -21,7 +21,8 @@
 </p>
 
 <p>
-	<%= image_tag @ad.image.url %><br/>
+	<%= image_tag @ad.image.url(:thumb) %><br/>
+  <%= image_tag @ad.image.url(:medium) %><br/>
 	<%= link_to @ad.image.url, @ad.image.url %>
 </p>
 
